@@ -329,9 +329,13 @@
     <string name="fp_unlock_keystore_title">FP unlock</string>
     <string name="fp_unlock_keystore_summary">Unlock device with fingerprint after reboot without PIN/Password/Pattern\nNote: at your own risk!</string>
 
-  <!-- Substratum and Magisk dashboard tiles -->
+   <!-- Substratum and Magisk dashboard tiles -->
    <string name="substratum_title">Substratum</string>
    <string name="substratum_summary">Customize device theme</string>
    <string name="magisk_title">Magisk Manager</string>
    <string name="magisk_summary">Root management</string>
+
+   <!-- Screenshot sound -->
+   <string name="screenshot_sound_title">Screenshot sound</string>
+   <string name="screenshot_sound_summary">Plays sound effect when screenshot is taken</string>
 </resources>
