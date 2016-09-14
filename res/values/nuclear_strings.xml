@@ -336,4 +336,7 @@
    <!-- Media art -->
     <string name="media_art_title">Media cover art</string>
     <string name="media_art_summary">Enable media cover art on the lockscreen</string>
+
+    <string name="substratum_title">Substratum</string>
+    <string name="substratum_summary">Customize device theme</string>
 </resources>
