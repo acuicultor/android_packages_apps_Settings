@@ -297,5 +297,8 @@
     <string name="nuclearlock_category">LockScreen Settings</string>
     <string name="statusbar_icons_category">StatusBar Icons</string>
     <string name="nuclear_clock_summary">Customize clock and date on StatusBar</string>
-
+    <string name="lock_shortcuts_summary">Customize bottom shortcuts on the lockscreen</string>
+    <string name="lock_music_summary">Displays a background equalizer on the lockscreen</string>
+    <string name="lock_weather_summary">Displays the weather on the lockscreen</string>
+    <string name="lock_blur_summary">Generates background transparency on lockscreen</string>
 </resources>
