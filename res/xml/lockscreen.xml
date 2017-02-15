@@ -9,10 +9,47 @@
         android:key="lock_category"
         android:title="@string/nuclearlock_category" />
 
-        <cyanogenmod.preference.CMSystemSettingSwitchPreference
-            android:key="double_tap_sleep_anywhere"
-            android:title="@string/double_tap_sleep_anywhere_title"
-            android:summary="@string/double_tap_sleep_anywhere_summary"
-            android:icon="@drawable/nuclear_doubletap_icon"
-            android:defaultValue="true" />
+    <com.android.settings.SingleLineSummaryPreference
+        android:key="owner_info_settings"
+        android:title="@string/owner_info_settings_title"
+        android:icon="@drawable/nuclear_lock_ui_icon"
+        android:summary="@string/owner_info_settings_summary"/>
+
+    <PreferenceScreen
+        android:title="@string/lockscreen_targets_message"
+        android:icon="@drawable/nuclear_lock_shortcuts_icon"
+        android:summary="@string/lock_shortcuts_summary">
+        <intent
+            android:targetPackage="com.android.systemui"
+            android:targetClass="com.android.systemui.cm.LockscreenShortcutsActivity" />
+    </PreferenceScreen>
+
+    <cyanogenmod.preference.CMSystemSettingSwitchPreference
+        android:key="double_tap_sleep_anywhere"
+        android:title="@string/double_tap_sleep_anywhere_title"
+        android:summary="@string/double_tap_sleep_anywhere_summary"
+        android:icon="@drawable/nuclear_doubletap_icon"
+        android:defaultValue="true" />
+
+    <cyanogenmod.preference.CMSecureSettingSwitchPreference
+        android:key="lockscreen_visualizer"
+        android:title="@string/lockscreen_visualizer_title"
+        android:icon="@drawable/nuclear_mucic_icon"
+        android:summary="@string/lock_music_summary"
+        android:defaultValue="true"/>
+
+    <cyanogenmod.preference.CMSecureSettingSwitchPreference
+        android:key="lock_screen_weather_enabled"
+        android:title="@string/lockscreen_weather_enabled_title"
+        android:icon="@drawable/nuclear_lock_weather_icon"
+        android:summary="@string/lock_weather_summary"
+        android:defaultValue="false"/>
+
+    <cyanogenmod.preference.CMSecureSettingSwitchPreference
+        android:key="lock_screen_blur_enabled"
+        android:title="@string/lockscreen_blur_enabled_title"
+        android:icon="@drawable/nuclear_blur_icon"
+        android:summary="@string/lock_blur_summary"
+        android:defaultValue="false"/>
+
 </PreferenceScreen>
