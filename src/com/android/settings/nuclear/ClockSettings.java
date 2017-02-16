@@ -62,6 +62,7 @@ public class ClockSettings extends SettingsPreferenceFragment
     private static final String PREF_FONT_STYLE = "font_style";
     private static final String PREF_STATUS_BAR_CLOCK_FONT_SIZE  = "status_bar_clock_font_size";
     private static final String PREF_CLOCK_DATE_POSITION = "clock_date_position";
+    private static final String STATUS_BAR_CLOCK_SECONDS = "status_bar_clock_seconds";
 
     public static final int CLOCK_DATE_STYLE_LOWERCASE = 1;
     public static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
@@ -74,25 +75,26 @@ public class ClockSettings extends SettingsPreferenceFragment
     private ListPreference mStatusBarDateFormat;
     private ListPreference mFontStyle;
     private SeekBarPreference mStatusBarClockFontSize;
-    private boolean mCheckPreferences;
+    private boolean mCheckPreferences;  
     private ListPreference mClockDatePosition;
+    private SwitchPreference mStatusBarClockSeconds;
 
 
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        createCustomView();
+    createCustomView();
     }
 
-    private PreferenceScreen createCustomView() {
-        mCheckPreferences = false;
-        addPreferencesFromResource(R.xml.nuclear_clock);
+    private PreferenceScreen createCustomView() {   
+    mCheckPreferences = false;
+    addPreferencesFromResource(R.xml.nuclear_clock);
 
-        PreferenceScreen prefSet = getPreferenceScreen();
+    PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
 
-        PackageManager pm = getPackageManager();
+    PackageManager pm = getPackageManager();
         Resources systemUiResources;
         try {
             systemUiResources = pm.getResourcesForApplication("com.android.systemui");
@@ -108,6 +110,12 @@ public class ClockSettings extends SettingsPreferenceFragment
         mStatusBarDate = (ListPreference) findPreference(STATUS_BAR_DATE);
         mStatusBarDateStyle = (ListPreference) findPreference(STATUS_BAR_DATE_STYLE);
         mStatusBarDateFormat = (ListPreference) findPreference(STATUS_BAR_DATE_FORMAT);
+
+        mStatusBarClockSeconds = (SwitchPreference) findPreference(STATUS_BAR_CLOCK_SECONDS);
+        mStatusBarClockSeconds.setChecked((Settings.System.getInt(
+                getActivity().getApplicationContext().getContentResolver(),
+                Settings.System.STATUS_BAR_CLOCK_SECONDS, 0) == 1));
+        mStatusBarClockSeconds.setOnPreferenceChangeListener(this);
 
 
         int clockStyle = CMSettings.System.getInt(resolver,
@@ -139,7 +147,7 @@ public class ClockSettings extends SettingsPreferenceFragment
         mStatusBarDateStyle.setSummary(mStatusBarDateStyle.getEntry());
         mStatusBarDateStyle.setOnPreferenceChangeListener(this);
 
-
+  
         mClockDatePosition = (ListPreference) findPreference(PREF_CLOCK_DATE_POSITION);
         mClockDatePosition.setOnPreferenceChangeListener(this);
         mClockDatePosition.setValue(Integer.toString(Settings.System.getInt(resolver,
@@ -185,9 +193,9 @@ public class ClockSettings extends SettingsPreferenceFragment
         // Adjust clock position for RTL if necessary
         Configuration config = getResources().getConfiguration();
         if (config.getLayoutDirection() == View.LAYOUT_DIRECTION_RTL) {
-            mStatusBarClock.setEntries(getActivity().getResources().getStringArray(
-                    R.array.status_bar_clock_style_entries_rtl));
-            mStatusBarClock.setSummary(mStatusBarClock.getEntry());
+                mStatusBarClock.setEntries(getActivity().getResources().getStringArray(
+                        R.array.status_bar_clock_style_entries_rtl));
+                mStatusBarClock.setSummary(mStatusBarClock.getEntry());
         }
     }
 
@@ -226,7 +234,7 @@ public class ClockSettings extends SettingsPreferenceFragment
             Settings.System.putInt(
                     resolver, STATUS_BAR_DATE_STYLE, statusBarDateStyle);
             mStatusBarDateStyle.setSummary(mStatusBarDateStyle.getEntries()[index]);
-            parseClockDateFormats();
+        parseClockDateFormats();
             return true;
         } else if (preference == mClockDatePosition) {
             int val = Integer.parseInt((String) newValue);
@@ -235,8 +243,8 @@ public class ClockSettings extends SettingsPreferenceFragment
                     Settings.System.STATUSBAR_CLOCK_DATE_POSITION, val);
             mClockDatePosition.setSummary(mClockDatePosition.getEntries()[index]);
             parseClockDateFormats();
-            return true;
-        } else if (preference ==  mStatusBarDateFormat) {
+             return true;
+         } else if (preference ==  mStatusBarDateFormat) {
             int index = mStatusBarDateFormat.findIndexOfValue((String) newValue);
             if (index == CUSTOM_CLOCK_DATE_FORMAT_INDEX) {
                 AlertDialog.Builder alert = new AlertDialog.Builder(getActivity());
@@ -245,8 +253,8 @@ public class ClockSettings extends SettingsPreferenceFragment
 
                 final EditText input = new EditText(getActivity());
                 String oldText = Settings.System.getString(
-                        getActivity().getContentResolver(),
-                        Settings.System.STATUS_BAR_DATE_FORMAT);
+                    getActivity().getContentResolver(),
+                    Settings.System.STATUS_BAR_DATE_FORMAT);
                 if (oldText != null) {
                     input.setText(oldText);
                 }
@@ -259,18 +267,18 @@ public class ClockSettings extends SettingsPreferenceFragment
                             return;
                         }
                         Settings.System.putString(getActivity().getContentResolver(),
-                                Settings.System.STATUS_BAR_DATE_FORMAT, value);
+                            Settings.System.STATUS_BAR_DATE_FORMAT, value);
 
                         return;
                     }
                 });
 
                 alert.setNegativeButton(R.string.menu_cancel,
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialogInterface, int which) {
-                                return;
-                            }
-                        });
+                    new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialogInterface, int which) {
+                        return;
+                    }
+                });
                 dialog = alert.create();
                 dialog.show();
             } else {
@@ -291,6 +299,11 @@ public class ClockSettings extends SettingsPreferenceFragment
             int size = (Integer) newValue;
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.STATUSBAR_CLOCK_FONT_SIZE, size);
+            return true;
+        } else if (preference == mStatusBarClockSeconds) {
+            Settings.System.putInt(getActivity().getApplicationContext().getContentResolver(),
+                    Settings.System.STATUS_BAR_CLOCK_SECONDS,
+                    (Boolean) newValue ? 1 : 0);
             return true;
         }
         return false;
