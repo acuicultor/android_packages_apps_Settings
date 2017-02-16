@@ -4,11 +4,17 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/generalui_category"
     android:layout="@layout/preference_tab"
-    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    xmlns:lineage="http://schemas.android.com/apk/res/cyanogenmod.platform">
 
     <PreferenceCategory
         android:key="gestures_category"
         android:title="@string/gestures_category">
+
+        <org.cyanogenmod.internal.cmparts.CMPartsPreference
+        android:key="touchscreen_gesture_settings"
+        android:icon="@drawable/nuclear_gestures_icon"
+        lineage:requiresFeature="cmhardware:FEATURE_TOUCHSCREEN_GESTURES" />    
 
         <!-- gesture_anywhere -->
         <PreferenceScreen
