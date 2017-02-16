@@ -180,11 +180,6 @@
         <string name="status_bar_clock_style_left">Left</string>
         <string name="status_bar_clock_style_center">Center</string>
         <string name="status_bar_clock_style_hidden">Hidden</string>
-        <string name="status_bar_clock_style_title">Clock style</string>
-        <string name="status_bar_clock_style_right">Right</string>
-        <string name="status_bar_clock_style_left">Left</string>
-        <string name="status_bar_clock_style_center">Center</string>
-        <string name="status_bar_clock_style_hidden">Hidden</string>
         <string name="clock_date_position">Date position</string>
         <string name="clock_date_right">Right of time</string>
         <string name="clock_date_left">Left of time</string>
@@ -233,6 +228,7 @@
         <string name="clock_font_notoserif_bold">NotoSerif Bold</string>
         <string name="clock_font_notoserif_bold_italic">NotoSerif Bold Italic</string>
         <string name="clock_font_size_title">Font size</string>
+        <string name="status_bar_clock_seconds_title">Show seconds</string>
 
         <!-- General -->
     <string name="ok">Okay</string>
