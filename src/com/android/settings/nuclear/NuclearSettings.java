@@ -31,6 +31,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.android.settings.nucleartweaks.About;
 import com.android.settings.nuclear.tabs.GeneralUI;
 import com.android.settings.nuclear.tabs.LockScreen;
 import com.android.settings.nuclear.tabs.StatusBar;
@@ -161,6 +162,7 @@ public class NuclearSettings extends SettingsPreferenceFragment {
             /*frags[2] = new Navigation();
             frags[3] = new Recents();*/
             frags[3] = new System();
+            frags[4] = new About();
         }
 
         @Override
@@ -186,9 +188,11 @@ public class NuclearSettings extends SettingsPreferenceFragment {
                     getString(R.string.generalui_category),
                     getString(R.string.lockscreen_category),
                     getString(R.string.statusbar_category),
+                    getString(R.string.system_category),
+                    getString(R.string.about_category)};
                     //getString(R.string.navigation_category),
                     //getString(R.string.multitasking_category),
-                    getString(R.string.system_category)};
+
         
         return titleString;
     }

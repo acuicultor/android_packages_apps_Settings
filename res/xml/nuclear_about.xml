@@ -1,63 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- About TeamNuclear, sources...forums...etc...-->
-<PreferenceScreen
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    
-    android:title="@string/about_ns_settings_title" >
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:cm="http://schemas.android.com/apk/res/cyanogenmod.platform"
+        xmlns:settings="http://schemas.android.com/apk/res-auto"
+        android:title="@string/about_ns_settings_title" >
 
-    <!-- Share NS ROM -->
          <Preference
              android:key="share"
              android:title="@string/share_ns"
              android:layout="@layout/preference_nuclearextra_teamabout"/>
-                
+
+    <PreferenceCategory
+        android:key="rom_status"
+        android:title="@string/nuclear_status" />
+
+        <!-- Mod version -->
+        <Preference 
+            android:key="mod_version"
+            android:enabled="false"
+            android:shouldDisableView="false"
+            android:title="@string/mod_version"
+            android:summary="@string/mod_version_default"
+            android:icon="@drawable/ic_nuclear_exposed" />
+
+        <!-- Device Kernel version -->
+        <com.android.settings.DividerPreference
+            android:key="kernel_version"
+            android:enabled="false"
+            android:shouldDisableView="false"
+            android:selectable="false"
+            android:title="@string/kernel_version"
+            android:icon="@drawable/nuclear_kernel_icon"
+            android:summary="@string/device_info_default"
+            settings:allowDividerAbove="true"
+            settings:allowDividerBelow="true"/>
+
+        <!-- Build date -->
+        <Preference 
+            android:key="build_date"
+            android:enabled="false"
+            android:shouldDisableView="false"
+            android:icon="@drawable/nuclear_buildate_icon"
+            android:title="@string/build_date"
+            android:summary="@string/build_date_default" />
+
+        <!-- Changelog -->
+        <PreferenceScreen 
+            android:key="changelog"
+            android:title="@string/changelog_nuclear_title"
+            android:icon="@drawable/nuclear_changelog_icon"
+            android:summary="@string/changelog_nuclear_summary"
+            android:fragment="com.android.settings.nuclear.Changelog" />
+            
+
     <PreferenceCategory
         android:key="links"
-        android:title="@string/ns"> 
+        android:title="@string/ns" />
+
+        <!-- NR SiteWeb -->
+        <Preference
+            android:key="nuclear_web"
+            android:title="@string/nuclear_web_title"
+            android:summary="@string/nuclear_web_summary"
+            android:icon="@drawable/ic_nuclear_exposed"/>
+
         <!-- sources github -->
         <Preference
             android:key="ns_source"
             android:title="@string/ns_source_title"
-            android:summary="@string/ns_source_summary" />
-        <!-- Pagina para donaciones --> 
-        <Preference
-            android:key="ns_donate"
-            android:title="@string/ns_donate"
-            android:summary="@string/ns_donate_summary" />
-                            
-     </PreferenceCategory>
+            android:summary="@string/ns_source_summary"
+            android:icon="@drawable/nuclear_cpu_icon" />
 
-     <PreferenceCategory
-        android:key="sourcebase"
-        android:title="@string/sourcebase_title">
-                
         <Preference
             android:key="ns_sourcebase"
             android:title="@string/ns_sourcebase"
-            android:summary="@string/ns_sourcebase_sumary" />
+            android:summary="@string/ns_sourcebase_sumary"
+            android:icon="@drawable/nuclear_sourcebase_icon" />
 
-    </PreferenceCategory>
-        <!-- Equipo Nuclear -->     
-    <PreferenceScreen
-        android:key="teamnuclear"
-        android:title="@string/team_nuclear" 
-        android:fragment="com.android.settings.nucleartweaks.team"
-        android:layout="@layout/preference_nuclearextra_teamabout">
-    </PreferenceScreen>
+        <!-- Pagina para donaciones -->
+        <Preference
+            android:key="ns_donate"
+            android:title="@string/nr_paypal_title"
+            android:summary="@string/nr_paypal_summary"
+            android:icon="@drawable/nuclear_donate_icon" />
+
+        <!-- Logcat or GTFO -->
+        <PreferenceScreen
+            android:key="drill"
+            android:icon="@drawable/nuclear_drill_icon"
+            android:fragment="com.android.settings.nuclear.NuclearDrill"
+            android:title="@string/nuclear_drill_title"
+            android:summary="@string/drill_summary" />   
+
+ 
 
         <PreferenceCategory
             android:key="devs"
-            android:title="@string/devs_title">
+            android:title="@string/devs_title" />
+
+            <PreferenceScreen android:key="moludo"
+                android:title="@string/moludo"
+                android:icon="@drawable/nuclear_dev_two_icon"
+                android:summary="@string/moludo_summary"/>
   
             <PreferenceScreen android:key="lozo"
-            android:title="@string/lozo" />
-            <PreferenceScreen android:key="moludo"
-            android:title="@string/moludo" />         
+                android:title="@string/lozo"
+                android:icon="@drawable/nuclear_dev_one_icon"
+                android:summary="@string/lozo_summary"/>
+
             <PreferenceScreen android:key="acuicultor"
-            android:title="@string/acuicultor" />
-            <PreferenceScreen android:key="ordenkrieger"
-            android:title="@string/ordenkrieger" />
-			
-        </PreferenceCategory>
+                android:title="@string/acuicultor"
+                android:icon="@drawable/nuclear_dev_three_icon"
+                android:summary="@string/acuicultor_summary"/>
+
+    <!-- Equipo Nuclear -->
+            <PreferenceScreen
+                android:key="teamnuclear"
+                android:title="@string/team_nuclear"
+                android:fragment="com.android.settings.nucleartweaks.team"
+                android:icon="@drawable/nuclear_people_icon"/>
           
 </PreferenceScreen>

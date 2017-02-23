@@ -13,6 +13,7 @@
     <string name="multitasking_category">Recents</string>
     <string name="system_category">System</string>
     <string name="lockscreen_category">LockScreen</string>
+    <string name="about_category">NuclearZone</string>
 
     <!-- Tab GeneralUI -->
     <string name="appearance_settings_title">Appearance Settings</string>
@@ -116,7 +117,7 @@
 
     <!-- About NucleaRomReborn -->
     <string name="about_ns_settings_title">NucleaRom</string>
-    <string name="share_ns">Todo sobre NucleaRom</string>
+    <string name="share_ns">All About NucleaRom</string>
     <string name="ns_donate">Aporta una donación al NuclearTeam</string>
     <string name="ns_donate_summary">Dando soporte a NuclearTeam</string>
     <string name="github_tn">https://github.com/OneRomOne</string>
@@ -131,10 +132,13 @@
     <string name="title_about">Acerca de NucleaRom</string>
     <string name="changelog_title">Changelog</string>
     <string name="changelog_title_summary">Consulta los changelogs</string>
-    <string name="team_nuclear">Miembros NuclearTeam</string>
+    <string name="team_nuclear">NuclearTeam Members</string>
     <string name="moludo">Moludo</string>
+    <string name="moludo_summary">● Founder \n● Developer \n● Maintainer</string>
     <string name="lozo">Lozo</string>
+    <string name="lozo_summary">● Apps Designer \n● Developer \n● Maintainer </string>
     <string name="acuicultor">Acuicultor</string>
+    <string name="acuicultor_summary">● Kernel Developer \n● Maintainer</string>
     <string name="ordenkrieger">OrdenKrieger</string>
     <string name="evuz">Evuz</string>
     <string name="victoria">Victoria</string>
@@ -144,11 +148,15 @@
     <string name="santos">Gusy_80</string>
     <string name="alfo">alfo!!!</string>
     <string name="dtr">DTR</string>
-    <string name="devs_title">Devs</string>
+    <string name="devs_title">Nuclear People</string>
     <string name="maintainer_title">Maintainer thread</string>
     <string name="testers_title">Testers</string>
-    <string name="ns_sourcebase">CyanogenMod</string>
-    <string name="ns_sourcebase_sumary">https://github.com/CyanogenMod</string>
+    <string name="ns_sourcebase">LineageOS</string>
+    <string name="ns_sourcebase_sumary">https://github.com/LineageOS</string>
+    <string name="nuclear_web_title">Nuclear Web Site</string>
+    <string name="nuclear_web_summary">Main site of Nuclear Team, Visit us now!</string>
+    <string name="nuclear_status">NucleaRom Status</string>
+
 
 	<!-- Superuser indicator on status bar -->
     <string name="su_indicator">Superuser indicator</string>
@@ -157,6 +165,8 @@
 
     <!-- Changelog -->
     <string name="changelog_crdroid_title">Changelog</string>
+    <string name="changelog_nuclear_title">Changelog on last Build</string>
+    <string name="changelog_nuclear_summary">See the last changes on the rom</string>
     <string name="changelog_crdroid_error">Unable to load changelog</string>
 
     <string name="double_tap_sleep_anywhere_title">Double Tap Sleep LockScreen</string>
@@ -297,4 +307,10 @@
     <string name="lock_music_summary">Displays a background equalizer on the lockscreen</string>
     <string name="lock_weather_summary">Displays the weather on the lockscreen</string>
     <string name="lock_blur_summary">Generates background transparency on lockscreen</string>
+    <string name="nr_paypal_title">NuclearTeam PayPal</string>
+    <string name="nr_paypal_summary">If you want to invite us to a beer?</string>
+
+    <!-- The Drill -->
+    <string name="nuclear_drill_title">The drill</string>
+    <string name="drill_summary">Logcat or GTFO</string>
 </resources>

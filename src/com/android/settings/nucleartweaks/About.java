@@ -46,27 +46,46 @@ import java.util.Collections;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.R;
 import com.android.settings.Utils;
+import com.android.settingslib.DeviceInfoUtils;
     
-public class about extends SettingsPreferenceFragment implements
+public class About extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
             
-public static final String TAG = "about";
+    public static final String TAG = "About";
     
-private static final String NS_ROM_SHARE = "share";
+    private static final String NS_ROM_SHARE = "share";
+    private static final String KEY_KERNEL_VERSION = "kernel_version";
+    private static final String KEY_MOD_VERSION = "mod_version";
+    private static final String KEY_MOD_BUILD_DATE = "build_date";
     
     Preference mSourceUrl;
     Preference mDonateUrl;
     Preference mSourcebaseUrl;
+    Preference mNuclearWebUrl;
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         addPreferencesFromResource(R.xml.nuclear_about);
+
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getContentResolver();
+
         mSourceUrl = findPreference("ns_source");
         mDonateUrl = findPreference("ns_donate");
         mSourcebaseUrl = findPreference("ns_sourcebase");
+        mNuclearWebUrl = findPreference("nuclear_web");
+
+        findPreference(KEY_KERNEL_VERSION).setSummary(DeviceInfoUtils.customizeFormatKernelVersion(
+                getResources().getBoolean(R.bool.def_hide_kernel_version_name)));
+
+        findPreference(KEY_MOD_VERSION).setSummary(
+                cyanogenmod.os.Build.CYANOGENMOD_DISPLAY_VERSION);
+        findPreference(KEY_MOD_VERSION).setEnabled(true);
+        setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
+
+
     }
 
     @Override
@@ -77,11 +96,13 @@ private static final String NS_ROM_SHARE = "share";
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
         if (preference == mSourceUrl) {
-            launchUrl("https://github.com/OneRomOne");
+            launchUrl("https://github.com/OneRomOne-n");
         } else if (preference == mDonateUrl) {
             launchUrl("http://paypal.me/TeamNuclear");
+        } else if (preference == mNuclearWebUrl) {
+            launchUrl("http://nuclearom.com/");
         } else if (preference == mSourcebaseUrl) {
-            launchUrl("https://github.com/CyanogenMod");
+            launchUrl("https://github.com/LineageOS");
         }  else if (preference.getKey().equals(NS_ROM_SHARE)) {
             Intent intent = new Intent();
             intent.setAction(Intent.ACTION_SEND);
@@ -99,6 +120,16 @@ private static final String NS_ROM_SHARE = "share";
         Uri uriUrl = Uri.parse(url);
         Intent donate = new Intent(Intent.ACTION_VIEW, uriUrl);
         getActivity().startActivity(donate);
+    }
+
+    private void setValueSummary(String preference, String property) {
+        try {
+            findPreference(preference).setSummary(
+                    SystemProperties.get(property,
+                            getResources().getString(R.string.device_info_default)));
+        } catch (RuntimeException e) {
+            // No recovery
+        }
     }
    
    @Override

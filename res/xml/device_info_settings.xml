@@ -21,7 +21,7 @@
 
         <!-- NucleaRom Logotype -->
         <PreferenceScreen android:key="nuclear_logo"
-                          android:fragment="com.android.settings.nucleartweaks.about"
+                          android:fragment="com.android.settings.nucleartweaks.About"
                           android:layout="@layout/nuclear_logo_row" />
 
         <!-- Changelog -->
