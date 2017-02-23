@@ -18,7 +18,6 @@
 <string name="appearance_settings_title">Apariencia</string>
 <string name="ledsnot_settings_title">Led</string>
 <string name="gesture_settings_title">Gestos</string>
-
 <!-- Dialog -->
 <string name="nucleartweaks_dialog_title">Ayudanos, ayúdate!!</string>
 <string name="nucleartweaks_dialog_message">Desafortunadamente no somos magos!\n\nAsí que si encontráis un bug o error con alguno de los ajustes, por favor contactar con los desarrolladores de Nuclear Team (WEB o XDAdeveloper) aportando:\n\n1. Logcat or Last_Kmsg\n2. Kernel y Mods usados\n3. Información útil\n\nSi no nos reportáis los fallos no esperéis que se puedan arreglar. Recordar, no somos magos, así que hay cosas que se nos escapan.</string>
@@ -66,58 +65,40 @@
 <string name="gesture_anywhere_position_right">Borde derecho</string>
 <string name="gesture_anywhere_gestures_title">Gestos</string>
 <string name="gesture_anywhere_gestures_summary">Añadir, eliminar y modificar gestos</string>
-
 <!-- Label, button used to add a gesture -->
 <string name="ga_button_add">Añadir gesto</string>
-
 <!-- Label, button used to reload all gestures -->
 <string name="ga_button_reload">Recargar</string>
-
 <!-- Label, button used to cancel the operation of adding a gesture -->
 <string name="ga_button_discard">Descartar</string>
-
 <!-- Label, button used to save a gesture newly created -->
 <string name="ga_button_done">Hecho</string>
-
 <!-- Label, prompt asking the user to enter the name of the gesture -->
 <string name="ga_prompt_gesture_name">Nombre</string>
-
 <!-- Error message, informs the user he needs to enter a name before saving a gesture -->
 <string name="ga_error_missing_name">Debe introducir un nombre</string>
-
 <!-- success message, tells the user where the gesture was saved -->
 <string name="ga_save_success">Gesto guardado en un %</string>
-
 <!-- Buttons in Rename gesture dialog box -->
 <string name="ga_rename_action">OK</string>
-
 <!-- Buttons in Rename gesture dialog box -->
 <string name="ga_cancel_action">Cancelar</string>
-
 <!-- Message displayed when the user opens the gestures settings screen -->
 <string name="ga_gestures_loading">Guardando gestos...</string>
-
 <!-- Message displayed when the user has no gestures -->
 <string name="ga_gestures_empty">Sin gestos</string>
-
 <!-- Title of the screen used to view/manage gestures -->
 <string name="ga_gestures_activity">Gestos</string>
-
 <!-- Noun, menu item used to edit a gesture -->
 <string name="ga_gestures_edit">Editar</string>
-
 <!-- Noun, menu item used to remove a gesture -->
 <string name="ga_gestures_delete">Borrar</string>
-
 <!-- Message displayed when a gesture is successfully deleted -->
 <string name="ga_gestures_delete_success">Gesto borrado</string>
-
 <!-- Title of dialog box -->
 <string name="ga_gestures_rename_title">Renombrar gesto</string>
-
 <!-- Label of gesture name field in Rename gesture dialog box -->
 <string name="ga_gestures_rename_label">Nombre del gesto</string>
-
 <!-- Message, displayed when the sdcard cannot be found, 1st parameter is the name of the file that stores the gestures. CHAR LIMIT=80 -->
 <string name="ga_gestures_error_loading">No se pudo cargar %. Asegurese de tener disponible espacio del almacenaje.</string>
 <string name="trigger_category">Ajustes del lanzador de gestos libres</string>
@@ -177,7 +158,8 @@
 <!-- Changelog -->
 <string name="changelog_crdroid_title">Changelog (registro de cambios)</string>
 <string name="changelog_crdroid_error">Imposible leer el changelog</string>
-<string name="double_tap_sleep_anywhere_title">Doble toque para bloquear la pantalla de bloqueo</string>
+
+ <string name="double_tap_sleep_anywhere_title">Doble toque para bloquear la pantalla de bloqueo</string>
 <string name="double_tap_sleep_anywhere_summary">Doble toque en el tercio superior o en la parte inferior para bloquear</string>
 
 <!-- Three-fingers-swipe to screenshot -->
@@ -186,7 +168,6 @@
 
 <!-- UI debug setting: show CPU info? [CHAR LIMIT=25] -->
 <string name="show_cpu_info">Mostrar info de la CPU</string>
-
 <!-- UI debug setting: show cpu usage summary [CHAR LIMIT=50] -->
 <string name="show_cpu_info_summary">Superponer pantalla para mostrar info actual de la CPU</string>
 
@@ -194,11 +175,6 @@
 <string name="clock_settings_title">Ajustes del reloj</string>
 <string name="status_bar_clock_category">Reloj</string>
 <string name="status_bar_date_title">Fecha</string>
-<string name="status_bar_clock_style_title">Estilo del reloj</string>
-<string name="status_bar_clock_style_right">Derecha</string>
-<string name="status_bar_clock_style_left">Izquierda</string>
-<string name="status_bar_clock_style_center">Centrar</string>
-<string name="status_bar_clock_style_hidden">Ocultar</string>
 <string name="status_bar_clock_style_title">Estilo del reloj</string>
 <string name="status_bar_clock_style_right">Derecha</string>
 <string name="status_bar_clock_style_left">Izquierda</string>
@@ -252,7 +228,8 @@
 <string name="clock_font_notoserif_bold">NotoSerif negrita</string>
 <string name="clock_font_notoserif_bold_italic">NotoSerif negrita cursiva</string>
 <string name="clock_font_size_title">Tamaño de fuente</string>
-
+<string name="status_bar_clock_seconds_title">Mostrar segundos</string>
+ 
 <!-- General -->
 <string name="ok">Ok</string>
 <string name="reset">Restablecer</string>
@@ -316,6 +293,9 @@
 <string name="nuclearsystem_category">Opciones del sistema</string>
 <string name="nuclearlock_category">Ajustes de la pantalla de bloqueo</string>
 <string name="statusbar_icons_category">Iconos de la barra de estado</string>
-<string name="nuclear_clock_summary">Personalizar el reloj y la fecha en la barra de estado</string>
-
+<string name="nuclear_clock_summary">Personaliza el reloj y la fecha en la barra de estado</string>
+<string name="lock_shortcuts_summary">Personaliza los accesos directos inferiores de la pantalla de bloqueo</string>
+<string name="lock_music_summary">Muestra el ecualizador de fondo en la pantalla de bloqueo</string>
+<string name="lock_weather_summary">Muestra el clima en la pantalla de bloqueo</string>
+<string name="lock_blur_summary">Difuminar el fondo en la pantalla de bloqueo</string>
 </resources>
