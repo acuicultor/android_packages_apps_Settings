@@ -18,15 +18,9 @@ import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.os.SystemProperties;
 import android.os.UserHandle;
 import android.os.UserManager;
-import android.content.ComponentName;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.content.pm.ResolveInfo;
-import android.content.res.Resources;
 import android.provider.Settings;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
@@ -42,6 +36,8 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.OwnerInfoSettings;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.util.Helpers;
+import com.android.settings.Utils;
 
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT; 
 

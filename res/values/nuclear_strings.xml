@@ -309,6 +309,8 @@
     <string name="lock_blur_summary">Generates background transparency on lockscreen</string>
     <string name="nr_paypal_title">NuclearTeam PayPal</string>
     <string name="nr_paypal_summary">If you want to invite us to a beer?</string>
+    <string name="weather_settings_title_cclock">Clock and widget settings</string>
+    <string name="misc_weather_settings_summary">Customize various options for Cclock app</string>
 
     <!-- The Drill -->
     <string name="nuclear_drill_title">The drill</string>

@@ -39,17 +39,29 @@
         android:defaultValue="true"/>
 
     <cyanogenmod.preference.CMSecureSettingSwitchPreference
+        android:key="lock_screen_blur_enabled"
+        android:title="@string/lockscreen_blur_enabled_title"
+        android:icon="@drawable/nuclear_blur_icon"
+        android:summary="@string/lock_blur_summary"
+        android:defaultValue="false"/>
+
+    <cyanogenmod.preference.CMSecureSettingSwitchPreference
         android:key="lock_screen_weather_enabled"
         android:title="@string/lockscreen_weather_enabled_title"
         android:icon="@drawable/nuclear_lock_weather_icon"
         android:summary="@string/lock_weather_summary"
         android:defaultValue="false"/>
 
-    <cyanogenmod.preference.CMSecureSettingSwitchPreference
-        android:key="lock_screen_blur_enabled"
-        android:title="@string/lockscreen_blur_enabled_title"
-        android:icon="@drawable/nuclear_blur_icon"
-        android:summary="@string/lock_blur_summary"
-        android:defaultValue="false"/>
+    <!-- Weather Settings -->
+    <Preference
+        android:key="weather_settings"
+        android:title="@string/weather_settings_title_cclock"
+        android:summary="@string/misc_weather_settings_summary"
+        android:icon="@drawable/nuclear_weather_main_icon">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.lockclock"
+            android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
+    </Preference>    
 
 </PreferenceScreen>
