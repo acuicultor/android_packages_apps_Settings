@@ -36,7 +36,6 @@ import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.R;
 import com.android.settings.OwnerInfoSettings;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.util.Helpers;
 import com.android.settings.Utils;
 
 import static android.provider.Settings.System.SCREEN_OFF_TIMEOUT; 
