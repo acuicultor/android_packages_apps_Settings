@@ -13,6 +13,7 @@
 <string name="multitasking_category">Recientes</string>
 <string name="system_category">Sistema</string>
 <string name="lockscreen_category">Pantalla de Bloqueo</string>
+<string name="about_category">Zona Nuclear</string>
 
 <!-- Tab GeneralUI -->
 <string name="appearance_settings_title">Apariencia</string>
@@ -121,20 +122,23 @@
 <string name="ns_donate_summary">Dando soporte a NuclearTeam</string>
 <string name="github_tn">https://github.com/OneRomOne</string>
 <string name="ns">Links</string>
-<string name="ns_kernel_title">Kernel Website</string>
+<string name="ns_kernel_title">Web del Kernel</string>
 <string name="ns_kernel_summary">Mas informacion acerca del kernel</string>
 <string name="ns_forum_title">NucleaRom ForumSite</string>
 <string name="ns_forum_summary">Consulta las ultimas descargas</string>
 <string name="ns_source_title">Github</string>
-<string name="ns_source_summary">NucleaRom Sources</string>
-<string name="sourcebase_title">Source Base</string>
+<string name="ns_source_summary">Fuentes de NucleaRom</string>
+<string name="sourcebase_title">Base de las fuentes</string>
 <string name="title_about">Acerca de NucleaRom</string>
-<string name="changelog_title">Changelog</string>
-<string name="changelog_title_summary">Consulta los changelogs</string>
+<string name="changelog_title">Historial de cambios (changelog)</string>
+<string name="changelog_title_summary">Consulta los cambios (changelogs)</string>
 <string name="team_nuclear">Miembros NuclearTeam</string>
 <string name="moludo">Moludo</string>
+<string name="moludo_summary">● Fundador \n● Desarrollador \n● Mantenimiento</string>
 <string name="lozo">Lozo</string>
+<string name="lozo_summary">● Diseñador de aplicaciones \n● Desarrollador \n● Mantenimiento </string>
 <string name="acuicultor">Acuicultor</string>
+<string name="acuicultor_summary">● Desarrollador del Kernel \n● Mantenimiento</string>
 <string name="ordenkrieger">OrdenKrieger</string>
 <string name="evuz">Evuz</string>
 <string name="victoria">Victoria</string>
@@ -144,20 +148,26 @@
 <string name="santos">Gusy_80</string>
 <string name="alfo">alfo!!!</string>
 <string name="dtr">Dtr</string>
-<string name="devs_title">Devs</string>
+<string name="devs_title">Personas en Nuclear</string>
 <string name="maintainer_title">Maintainer thread</string>
 <string name="testers_title">Testers</string>
-<string name="ns_sourcebase">CyanogenMod</string>
-<string name="ns_sourcebase_sumary">https://github.com/CyanogenMod</string>
-
-<!-- Superuser indicator on status bar -->
+<string name="ns_sourcebase">LineageOS</string>
+<string name="ns_sourcebase_sumary">https://github.com/LineageOS</string>
+<string name="nuclear_web_title">Web de Nuclear</string>
+<string name="nuclear_web_summary">Web de Nuclear Team, visítanos ahora!</string>
+<string name="nuclear_status">Estado de NucleaRom</string>
+ 
+ 
+ <!-- Superuser indicator on status bar -->
 <string name="su_indicator">Indicador de superusuario</string>
 <string name="su_indicator_summary_on">Indicador de superusuario visible cuando una sesión esté activa</string>
 <string name="su_indicator_summary_off">Mostrar el indicador de superusuario cuando una sesión esté activa</string>
 
 <!-- Changelog -->
-<string name="changelog_crdroid_title">Changelog (registro de cambios)</string>
-<string name="changelog_crdroid_error">Imposible leer el changelog</string>
+<string name="changelog_crdroid_title">Historial de cambios (changelog)</string>
+<string name="changelog_nuclear_title">Historial de cambios en la última versión (changelog)</string>
+<string name="changelog_nuclear_summary">Consulta los últimos cambios de la rom</string>
+<string name="changelog_crdroid_error">No se puede cargar el historial de cambios (changelog)</string>
 
  <string name="double_tap_sleep_anywhere_title">Doble toque para bloquear la pantalla de bloqueo</string>
 <string name="double_tap_sleep_anywhere_summary">Doble toque en el tercio superior o en la parte inferior para bloquear</string>
@@ -273,7 +283,6 @@
 <string name="dashboard_summary_double_lines_summary_off">Mostrar el resumen del panel en 1 línea</string>
 
 <!-- OmniSwitch -->
-<string name="omniswitch_category">OmniSwitch</string>
 <string name="recents_use_omniswitch_title">Usar para recientes</string>
 <string name="recents_use_omniswitch_summary">Usar OmniSwitch en lugar de la vista de recientes predeterminada</string>
 <string name="omniswitch_start_settings_title">Ajustes</string>
@@ -285,7 +294,7 @@
 <!-- NuclearDesing -->
 <string name="gestures_category">Gestos</string>
 <string name="recents_category">Aplicaciones recientes</string>
-<string name="gesture_anywhere_summary">Crea tus propios gestos para accesos rápidos</string>
+<string name="gesture_anywhere_summary">Crea gestos para tus accesos rápidos</string>
 <string name="dashboard_options_title">Estilo del panel</string>
 <string name="dashboard_options_summary">Personaliza el panel de control a tu gusto</string>
 <string name="omniswitch_summary">Personaliza tus aplicaciones recientes cambiando las de LineageOS por OmniSwitch</string>
@@ -296,6 +305,14 @@
 <string name="nuclear_clock_summary">Personaliza el reloj y la fecha en la barra de estado</string>
 <string name="lock_shortcuts_summary">Personaliza los accesos directos inferiores de la pantalla de bloqueo</string>
 <string name="lock_music_summary">Muestra el ecualizador de fondo en la pantalla de bloqueo</string>
-<string name="lock_weather_summary">Muestra el clima en la pantalla de bloqueo</string>
+<string name="lock_weather_summary">Muestra el clima en la pantalla de bloqueo (necesario activar debajo un proveedor) </string>
 <string name="lock_blur_summary">Difuminar el fondo en la pantalla de bloqueo</string>
+<string name="nr_paypal_title">PayPal de NuclearTeam</string>
+<string name="nr_paypal_summary">Nos quieres invitar a una cerveza?</string>
+<string name="weather_settings_title_cclock">Proveedor metereológico y ajustes del widget</string>
+<string name="misc_weather_settings_summary">Seleccionar proveedor y personalizar el widget del reloj y clima</string>
+
+<!-- The Drill -->
+<string name="nuclear_drill_title">The drill</string>
+<string name="drill_summary">Logcat or GTFO</string>
 </resources>
