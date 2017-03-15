@@ -24,6 +24,13 @@
             android:defaultValue="true"
             android:icon="@drawable/nuclear_root_icon"/>
 
+        <com.android.settings.preferences.SystemSettingSwitchPreference
+            android:key="roaming_indicator_icon"
+            android:icon="@drawable/ic_roaming_indicator"
+            android:title="@string/roaming_indicator_icon_title"
+            android:summary="@string/roaming_indicator_icon_summary"
+            android:defaultValue="true"/>
+
         <com.android.settings.nuclear.Preferences.SystemSettingSwitchPreference
             android:key="battery_save_mode_color"
             android:title="@string/battery_saver_color_title"
