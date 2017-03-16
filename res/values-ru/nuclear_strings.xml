@@ -13,6 +13,7 @@
     <string name="multitasking_category">Последние приложения</string>
     <string name="system_category">Система</string>
     <string name="lockscreen_category">Экран блокировки</string>
+    <string name="about_category">Зона Nuclear</string>
 
     <!-- Tab GeneralUI -->
     <string name="appearance_settings_title">Внешний вид</string>
@@ -133,8 +134,11 @@
     <string name="changelog_title_summary">Проверить последние изменения</string>
     <string name="team_nuclear">Команда NuclearTeam</string>
     <string name="moludo">Moludo</string>
+    <string name="moludo_summary">● Основатель \n● Разработчик \n● Сопровождающий</string>
     <string name="lozo">Lozo</string>
+    <string name="lozo_summary">● Дизайнер приложений \n● Разработчик \n● Сопровождающий</string>
     <string name="acuicultor">Acuicultor</string>
+    <string name="acuicultor_summary">● Разработчик ядра \n● Сопровождающий</string>
     <string name="ordenkrieger">OrdenKrieger</string>
     <string name="evuz">Evuz</string>
     <string name="victoria">Victoria</string>
@@ -147,9 +151,13 @@
     <string name="devs_title">Разработчики</string>
     <string name="maintainer_title">Сопровождающие</string>
     <string name="testers_title">Тестеры</string>
-    <string name="ns_sourcebase">CyanogenMod</string>
-    <string name="ns_sourcebase_sumary">https://github.com/CyanogenMod</string>
-
+    <string name="ns_sourcebase">LineageOS</string>
+    <string name="ns_sourcebase_sumary">https://github.com/LineageOS</string>
+    <string name="nuclear_web_title">Веб сайт Nuclear</string>
+    <string name="nuclear_web_summary">Основной сайт комманды Nuclear, Посетите его сейчас!</string>
+    <string name="nuclear_status">Статус NucleaRom</string>
+    
+    
     <!-- Superuser indicator on status bar -->
     <string name="su_indicator">Индикатор суперпользователя</string>
     <string name="su_indicator_summary_on">Индикатор Суперпользователя  виден , когда сессия активна</string>
@@ -157,6 +165,8 @@
 
     <!-- Changelog -->
     <string name="changelog_crdroid_title">Список изменений</string>
+    <string name="changelog_nuclear_title">Список изменений в последней сборке</string>
+    <string name="changelog_nuclear_summary">Посмотреть последние изменения в прошивке</string>
     <string name="changelog_crdroid_error">Невозможно загрузить список изменений</string>
 
     <string name="double_tap_sleep_anywhere_title">DT2S на экране блокировки</string>
@@ -228,6 +238,7 @@
     <string name="clock_font_notoserif_bold">NotoSerif полужирный</string>
     <string name="clock_font_notoserif_bold_italic">NotoSerif полужирный курсивный</string>
     <string name="clock_font_size_title">Размер шрифта</string>
+    <string name="status_bar_clock_seconds_title">Отображать секунды</string>
 
     <!-- General -->
     <string name="ok">Хорошо</string>
@@ -246,4 +257,62 @@
     <string name="battery_saver_color_title">Цвет предупреждения</string>
     <string name="battery_saver_color_summary">Включить окрашивание панели навигации в оранжевый цвет при активации режима энергосбережения</string>
 
+    <!-- Dashboard options -->
+    <string name="dashboard_category">Опции панели настроек</string>
+    <string name="dashboard_suggestions_title">Подсказки</string>
+    <string name="summary_dashboard_suggestions_enabled">Подсказки панели настроек включены</string>
+    <string name="summary_dashboard_suggestions_disabled">Подсказки панели настроек выключены</string>
+    <string name="remove_tile_summaries_title">Сводки</string>
+    <string name="remove_tile_summaries_summary_enabled">Сводки панели настроек включены</string>
+    <string name="remove_tile_summaries_summary_disabled">Сводки панели настроек выключены</string>
+    <string name="dashboard_conditions_title">Условия</string>
+    <string name="summary_dashboard_conditions_enabled">Условия панели настроек включены</string>
+    <string name="summary_dashboard_conditions_disabled">Условия панели настроек выключены</string>
+    <string name="dashboard_columns_portrait_title">Столбцы (Портретный режим)</string>
+    <string name="dashboard_columns_landscape_title">Столбцы (Ландшафтный режим)</string>
+
+    <!-- Dashboard columns -->
+    <string name="dashboard_columns_title">Столбцы панели настроек</string>
+    <string name="dashboard_columns_summary">Изменение количества столбцов, отображаемых в панели настроек</string>
+    <string name="dashboard_columns_dialog_title">Выбрать количество столбцов панели настроек</string>
+    <string name="dashboard_columns_default">Один (два в ландшафтном режиме)</string>
+    <string name="dashboard_columns_two">Два (три в ландшафтном режиме)</string>
+    <string name="dashboard_columns_three">Три (четыре в ландшафтном режиме)</string>
+    <string name="dashboard_summary_double_lines_title">Строки сводки панели настроек</string>
+    <string name="dashboard_summary_double_lines_summary_on">Показывать сводки панели настроек в несколько строк</string>
+    <string name="dashboard_summary_double_lines_summary_off">Показывать сводки панели настроек в 1 строку</string>
+    
+    <!-- OmniSwitch -->
+    <string name="recents_use_omniswitch_title">Использовать для недавних приложений</string>
+    <string name="recents_use_omniswitch_summary">Использовать OmniSwitch вместо недавних приложений по умолчанию.</string>
+    <string name="omniswitch_start_settings_title">Настройки</string>
+    <string name="omniswitch_start_settings_summary">Открыть настройки OmniSwitch</string>
+    <string name="omniswitch_first_time_title">Информация</string>
+    <string name="omniswitch_first_time_message">Убедитесь, что вы включили OmniSwitch. Вы можете сделать это, используя \"Настройки\" ниже</string>
+    <string name="omniswitch_settings_title">OmniSwitch</string>
+
+    <!-- NuclearDesing -->
+    <string name="gestures_category">Жесты</string>
+    <string name="recents_category">Последние приложения</string>
+    <string name="gesture_anywhere_summary">Сделайте свои жесты для быстрого доступа</string>
+    <string name="dashboard_options_title">Стиль панели настроек</string>
+    <string name="dashboard_options_summary">Настройте панель настроек по своему вкусу</string>
+    <string name="omniswitch_summary">Настройте свои последние приложения</string>
+    <string name="density_summary">Настройка плотности экрана</string>
+    <string name="nuclearsystem_category">Системные настройки</string>
+    <string name="nuclearlock_category">Настройка экрана блокировки</string>
+    <string name="statusbar_icons_category">Иконки в строке состояния</string>
+    <string name="nuclear_clock_summary">Настроить часы и дату в строке состояния</string>
+    <string name="lock_shortcuts_summary">Настройка нижних ярлыков на экране блокировки</string>
+    <string name="lock_music_summary">Отображает фоновый эквалайзер на экране блокировки</string>
+    <string name="lock_weather_summary">Отображает погоду на экране блокировки</string>
+    <string name="lock_blur_summary">Создает прозрачность фона на экране блокировки</string>
+    <string name="nr_paypal_title">NuclearTeam PayPal</string>
+    <string name="nr_paypal_summary">Если вы хотите пригласить нас на кружку пива?</string>
+    <string name="weather_settings_title_cclock">Настройки виджета часов</string>
+    <string name="misc_weather_settings_summary">Настройка различных параметров приложения Cclock</string>
+
+    <!-- The Drill -->
+    <string name="nuclear_drill_title">Дрель</string>
+    <string name="drill_summary">Logcat или GTFO</string>
 </resources>
