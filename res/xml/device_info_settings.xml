@@ -95,7 +95,7 @@
         <Preference android:key="mod_version"
                 android:enabled="false"
                 android:shouldDisableView="false"
-                android:title="@string/mod_version"
+                android:title="@string/nuclear_rom_ver"
                 android:summary="@string/mod_version_default" />
 
         <!-- CyanogenMod API Version -->

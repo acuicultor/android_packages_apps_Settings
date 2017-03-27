@@ -311,6 +311,7 @@
     <string name="nr_paypal_summary">If you want to invite us to a beer?</string>
     <string name="weather_settings_title_cclock">Clock and widget settings</string>
     <string name="misc_weather_settings_summary">Customize various options for Cclock app</string>
+    <string name="nuclear_rom_ver">NucleaRom Version</string>
 
     <!-- The Drill -->
     <string name="nuclear_drill_title">The drill</string>
