@@ -311,7 +311,8 @@
     <string name="nr_paypal_summary">Если вы хотите пригласить нас на кружку пива?</string>
     <string name="weather_settings_title_cclock">Настройки виджета часов</string>
     <string name="misc_weather_settings_summary">Настройка различных параметров приложения Cclock</string>
-
+    <string name="nuclear_rom_ver">Версия NucleaRom</string>
+    
     <!-- The Drill -->
     <string name="nuclear_drill_title">Дрель</string>
     <string name="drill_summary">Logcat или GTFO</string>
