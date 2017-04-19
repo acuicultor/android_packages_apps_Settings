@@ -113,6 +113,11 @@
                 android:icon="@drawable/nuclear_dev_three_icon"
                 android:summary="@string/acuicultor_summary"/>
 
+            <PreferenceScreen android:key="ordenkrieger"
+                android:title="@string/ordenkrieger"
+                android:icon="@drawable/nuclear_dev_four_icon"
+                android:summary="@string/ordenkrieger_summary"/>
+
     <!-- Equipo Nuclear -->
             <PreferenceScreen
                 android:key="teamnuclear"
