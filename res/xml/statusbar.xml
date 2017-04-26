@@ -24,7 +24,7 @@
             android:defaultValue="true"
             android:icon="@drawable/nuclear_root_icon"/>
 
-        <com.android.settings.preferences.SystemSettingSwitchPreference
+        <com.android.settings.nuclear.Preferences.SystemSettingSwitchPreference
             android:key="roaming_indicator_icon"
             android:icon="@drawable/ic_roaming_indicator"
             android:title="@string/roaming_indicator_icon_title"
