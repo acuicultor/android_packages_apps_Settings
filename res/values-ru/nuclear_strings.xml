@@ -317,4 +317,8 @@
     <!-- The Drill -->
     <string name="nuclear_drill_title">Дрель</string>
     <string name="drill_summary">Logcat или GTFO</string>
+    
+    <!-- Roaming indicator icon -->
+    <string name="roaming_indicator_icon_title">Отображать индикатор роуминга</string>
+    <string name="roaming_indicator_icon_summary">Отображать индикатор роуминга в значке сигнала в режиме роуминга</string>
 </resources>
