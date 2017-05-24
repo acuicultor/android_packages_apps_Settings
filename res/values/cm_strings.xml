@@ -45,7 +45,11 @@
     <!-- About phone screen, NucleaRom version -->
     <string name="mod_version">NucleaRom version</string>
     <string name="mod_version_default">Unknown</string>
-    
+    <string name="substratum_title">Substratum</string>
+    <string name="substratum_summary">Customize device theme</string>
+    <string name="magisk_title">Magisk Manager</string>
+    <string name="magisk_summary">Root management</string>
+
     <!-- About phone screen, Device model -->
     <string name="device_model">Device model</string>
     <!-- About phone screen, Device name -->
