@@ -59,7 +59,7 @@
         android:summary="@string/lock_weather_summary"
         android:defaultValue="false"/>
 
-    <cyanogenmod.preference.CMSecureSettingSwitchPreference 
+    <SwitchPreference 
         android:key="lockscreen_enable_qs"
         android:title="@string/lockscreen_enable_qs_title"
         android:icon="@drawable/nuclear_doubletap_icon"
