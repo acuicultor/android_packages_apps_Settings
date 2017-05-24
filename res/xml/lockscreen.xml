@@ -59,13 +59,6 @@
         android:summary="@string/lock_weather_summary"
         android:defaultValue="false"/>
 
-    <cyanogenmod.preference.CMSecureSettingSwitchPreference 
-        android:key="lockscreen_enable_qs"
-        android:title="@string/lockscreen_enable_qs_title"
-        android:icon="@drawable/nuclear_doubletap_icon"
-        android:summary="@string/lockscreen_enable_qs_summary"
-        android:defaultValue="true" />
-
     <!-- Weather Settings -->
     <Preference
         android:key="weather_settings"
@@ -73,9 +66,9 @@
         android:summary="@string/misc_weather_settings_summary"
         android:icon="@drawable/nuclear_weather_main_icon">
         <intent
-        android:action="android.intent.action.MAIN"
-        android:targetPackage="com.cyanogenmod.lockclock"
-        android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="com.cyanogenmod.lockclock"
+            android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
     </Preference>    
 
 </PreferenceScreen>

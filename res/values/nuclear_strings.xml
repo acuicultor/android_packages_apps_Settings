@@ -322,10 +322,6 @@
     <string name="roaming_indicator_icon_title">Show roaming indicator</string>
     <string name="roaming_indicator_icon_summary">Display roaming indicator in signal icon when in roaming mode</string>
 
-    <!-- Quick settings on secure lockscreen -->
-    <string name="lockscreen_enable_qs_title">Quick settings</string>
-    <string name="lockscreen_enable_qs_summary">Allow accessing quick settings and swipe shortcuts on secure lock screen</string>
-
     <!-- App details: open play store link if app is user installed -->
     <string name="app_play_store">Google Play</string>
 
