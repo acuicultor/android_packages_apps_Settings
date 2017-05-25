@@ -164,6 +164,10 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
         setStringSummary(KEY_DEVICE_NAME, Build.PRODUCT);
         removePreferenceIfBoolFalse(KEY_DEVICE_NAME, R.bool.config_displayDeviceName);
 
+        // Remove selinux information if property is not present
+        removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SELINUX_STATUS,
+                PROPERTY_SELINUX_STATUS);
+
         // Remove Safety information preference if PROPERTY_URL_SAFETYLEGAL is not set
         removePreferenceIfPropertyMissing(getPreferenceScreen(), KEY_SAFETY_LEGAL,
                 PROPERTY_URL_SAFETYLEGAL);
@@ -227,12 +231,9 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment implements In
     @Override
     public void onResume() {
         super.onResume();
-        boolean mDevEnabled = Settings.Global.getInt(getActivity().getContentResolver(),
-                Settings.Global.DEVELOPMENT_SETTINGS_ENABLED, 1) == 1;
-        int tapsRequired = mDevEnabled ? -1 : TAPS_TO_BE_A_DEVELOPER;
         mDevHitCountdown = getActivity().getSharedPreferences(DevelopmentSettings.PREF_FILE,
                 Context.MODE_PRIVATE).getBoolean(DevelopmentSettings.PREF_SHOW,
-                        android.os.Build.TYPE.equals("eng")) ? -1 : tapsRequired;
+                        android.os.Build.TYPE.equals("eng")) ? -1 : TAPS_TO_BE_A_DEVELOPER;
         mDevHitToast = null;
         mFunDisallowedAdmin = RestrictedLockUtils.checkIfRestrictionEnforced(
                 getActivity(), UserManager.DISALLOW_FUN, UserHandle.myUserId());
