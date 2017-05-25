@@ -33,6 +33,7 @@
         android:key="screenshot_sound"
         android:title="@string/screenshot_sound_title"
         android:summary="@string/screenshot_sound_summary"
+        android:icon="@drawable/nuclear_three_finger_gesture_icon" 
         android:defaultValue="true" />
 
     </PreferenceCategory>
