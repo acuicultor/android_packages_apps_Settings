@@ -38,13 +38,6 @@
         android:summary="@string/lock_music_summary"
         android:defaultValue="true"/>
 
-    <SwitchPreference
-        android:key="fp_unlock_keystore"
-        android:title="@string/fp_unlock_keystore_title"
-        android:icon="@drawable/nuclear_doubletap_icon"
-        android:summary="@string/fp_unlock_keystore_summary"
-        android:persistent="false" />
-
     <cyanogenmod.preference.CMSecureSettingSwitchPreference
         android:key="lock_screen_blur_enabled"
         android:title="@string/lockscreen_blur_enabled_title"
