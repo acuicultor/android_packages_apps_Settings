@@ -55,6 +55,12 @@
         android:key="recents_panel"
         android:title="@string/recents_category" />
 
+    <PreferenceScreen
+        android:key="clear_all_recents"
+        android:fragment="com.android.settings.nuclear.RecentsClearAll"
+        android:title="@string/recents_clear_all_title"
+    	android:icon="@drawable/nuclear_recents_clear_all_icon"  />
+
     <!-- OmniSwitch -->
     <PreferenceScreen
         android:key="omniswitch"
