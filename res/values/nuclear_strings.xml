@@ -376,6 +376,25 @@
    <string name="qs_fancy_animation_title">Fancy QS animation</string>
    <string name="qs_fancy_animation_summary">Enable a different animation effect when pulling down the statusbar</string>
 
+   <string name="qs_tile_layout">Tile Layout</string>
+   <string name="nuclear_qs_layout">Layout</string>
+   
+    <!-- QS settings -->
+    <string name="status_bar_expanded_qs_settings">Layout</string>
+    <string name="status_bar_expanded_qs_settings_summary">Choose the number of rows and columns</string>
+    <string name="qs_port_rows_title">Portrait Rows</string>
+    <string name="qs_port_columns_title">Portrait Columns</string>
+    <string name="qs_land_rows_title">Landscape Rows</string>
+    <string name="qs_land_columns_title">Landscape Columns</string>
+    <string name="qs_rows_columns_1_title">1</string>
+    <string name="qs_rows_columns_2_title">2</string>
+    <string name="qs_rows_columns_3_title">3</string>
+    <string name="qs_rows_columns_4_title">4</string>
+    <string name="qs_rows_columns_5_title">5</string>
+    <string name="qs_rows_columns_6_title">6</string>
+    <string name="qs_rows_columns_7_title">7</string>
+    <string name="qs_rows_columns_8_title">8</string>
+
     <!-- Tiles animation style  -->
 	<string name="qs_tiles">QS Tiles</string>
     <string name="qs_tile_animation_style_title">Animation style</string>
