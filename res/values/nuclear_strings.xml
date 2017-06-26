@@ -366,4 +366,9 @@
     <string name="rr_recents_animations_title">Recents</string>
     <string name="recents_anim_title">Recents Animations</string>
     <string name="recents_anim_summary">Customize the Delay of Recents window and its actions</string>
+
+   <!-- Qs Panel -->
+   <string name="nuclear_qs_title">Quick Settings Panel</string>
+   <string name="qs_category">QS Options</string>
+
 </resources>

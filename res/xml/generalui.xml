@@ -70,4 +70,15 @@
         android:summary="@string/omniswitch_summary"
         android:fragment="com.android.settings.nuclear.OmniSwitch" />
 
+    <!-- QS Panel -->
+    <PreferenceCategory
+        android:key="qs_panel"
+        android:title="@string/qs_category" />
+
+    <PreferenceScreen
+            android:id="@+id/qs_customizations"
+            android:title="@string/nuclear_qs_title"
+            android:fragment="com.android.settings.nuclear.QsPanel" 
+            android:icon="@drawable/nuclear_quick_settings_icon" />
+
 </PreferenceScreen>
