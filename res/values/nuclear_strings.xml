@@ -371,6 +371,7 @@
    <string name="nuclear_qs_title">Quick Settings Panel</string>
    <string name="qs_category">QS Options</string>
    <string name="qs_tiles">QS Tiles</string>
+   <string name="nuclear_qs_animation">Quick Animations</string>
 
    <string name="qs_fancy_animation_title">Fancy QS animation</string>
    <string name="qs_fancy_animation_summary">Enable a different animation effect when pulling down the statusbar</string>

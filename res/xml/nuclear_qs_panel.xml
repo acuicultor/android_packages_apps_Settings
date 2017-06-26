@@ -20,8 +20,12 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/nuclear_qs_title">
 
-      <PreferenceCategory
-        android:title="@string/qs_tiles">
+        <PreferenceScreen
+            android:key="nuclear_qs_animations"
+            android:fragment="com.android.settings.nuclear.QsAnimations"
+            android:title="@string/nuclear_qs_animation"
+            android:icon="@drawable/nuclear_qs_animations_icon"
+            />
 
         <com.android.settings.nuclear.Preferences.SecureSettingSwitchPreference
             android:key="quick_settings_vibrate"
@@ -34,27 +38,6 @@
             android:title="@string/qs_advanced_data_title"
             android:summary="@string/qs_advanced_data_summary"
             android:defaultValue="false" />
-
-        <ListPreference
-            android:key="qs_tile_animation_style"
-            android:title="@string/qs_tile_animation_style_title"
-            android:entries="@array/qs_tile_animation_style_entries"
-            android:entryValues="@array/qs_tile_animation_style_values"
-            android:persistent="false" />
-
-        <ListPreference
-            android:key="qs_tile_animation_duration"
-            android:title="@string/qs_tile_animation_duration_title"
-            android:entries="@array/qs_tile_animation_duration_entries"
-            android:entryValues="@array/qs_tile_animation_duration_values"
-            android:persistent="false" />
-
-        <ListPreference
-            android:key="qs_tile_animation_interpolator"
-            android:title="@string/qs_tile_animation_interpolator_title"
-            android:entries="@array/qs_tile_animation_interpolator_entries"
-            android:entryValues="@array/qs_tile_animation_interpolator_values"
-            android:persistent="false" />
 
         <com.android.settings.nuclear.Preferences.SecureSettingSwitchPreference
             android:key="qs_fancy_animation"
