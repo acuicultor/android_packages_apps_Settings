@@ -55,4 +55,10 @@
    
      </PreferenceCategory>
 
+        <com.android.settings.nuclear.Preferences.SecureSettingSwitchPreference
+            android:key="qs_wifi_easy_toggle"
+            android:title="@string/qs_wifi_easy_toggle_title"
+            android:summary="@string/qs_wifi_easy_toggle_summary"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
