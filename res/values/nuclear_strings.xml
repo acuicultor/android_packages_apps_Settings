@@ -372,6 +372,9 @@
    <string name="qs_category">QS Options</string>
    <string name="qs_tiles">QS Tiles</string>
 
+   <string name="qs_fancy_animation_title">Fancy QS animation</string>
+   <string name="qs_fancy_animation_summary">Enable a different animation effect when pulling down the statusbar</string>
+
     <!-- Tiles animation style  -->
 	<string name="qs_tiles">QS Tiles</string>
     <string name="qs_tile_animation_style_title">Animation style</string>
