@@ -14,42 +14,35 @@
 package com.android.settings.nuclear;
 
 import android.os.Bundle;
-import android.os.SystemProperties;
-import android.os.UserHandle;
-import android.app.Fragment;
-import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.ListPreference;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.Preference.OnPreferenceChangeListener;
+import android.support.v7.preference.PreferenceScreen;
+
 import com.android.internal.logging.MetricsProto.MetricsEvent;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 
-public class QsPanel extends SettingsPreferenceFragment implements
+public class QsAdvanced extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
-    private static final String TAG = "QsPanel";
+    private static final String TAG = "QsAdvanced";
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.APPLICATION;
+        return MetricsEvent.NUCLEAR;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.nuclear_qs_panel);
+        addPreferencesFromResource(R.xml.nuclear_qs_advanced);
     }
 
-    public boolean onPreferenceChange(Preference preference, Object objValue) {
-		return false;
+    public boolean onPreferenceChange(Preference preference, Object objValue)      {
+        return true;
     }
-
 }
